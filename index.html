@@ -6,7 +6,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Encriptador de textos</title>
-        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
       
@@ -19,28 +18,29 @@
                     id="texto" 
                     cols="30" 
                     rows="10" 
-                    placeholder="Ingresa el texto aquí">
-                </textarea>
+                    placeholder="Ingresa el texto aquí"
+                ></textarea>
+                <div class="terminos">
+                    <p>Solo ingresa letras minusculas y sin acentos.</p>
+                </div>
             </div>
-            <div class="terminos">
-                <p>Solo ingresa letras minusculas y sin acentos.</p>
-            </div>
+            
             <div class="botones">
                 <button class="btn-encriptar" type="button" onclick="encriptar()">
-                    encriptar
+                    Encriptar
                 </button>
                 <input type="button" 
                     class="btn-desencriptar" 
-                    value="Desencriptar()" 
+                    value="Desencriptar" 
                     onclick="desencriptar()"
                 />
             </div>
             <div class="encriptado">
-                <img src="" alt="" id="muñeco">
+                <img src="Imagenes/muñeco.png" alt="" id="muñeco">
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
-                    <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                    <h2 id="titulo-mensaje">Ningun mensaje fué encontrado</h2>
                     <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                    <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
                 </div>
             </div>
         </div>
