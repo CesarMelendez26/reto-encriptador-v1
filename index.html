@@ -6,12 +6,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Encriptador de textos</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="shortcut icon" href="Imagenes/favicon.png">
         <link rel="stylesheet" href="style.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
       
     <body>
+        <div class="titulo">
+            <h1>
+                Encrypter & Decrypter
+            </h1>
+        </div>
+
         <div class="container">
             <div class="encriptar">
                 <textarea 
@@ -23,7 +30,8 @@
                     placeholder="Ingresa el texto aquí"
                 ></textarea>
                 <div class="terminos">
-                    <p>Solo ingresa letras minusculas y sin acentos.</p>
+                    <img src="Imagenes/alert.png" alt="alerta" id="alerta">
+                    <p>Solo ingresa letras minuscula, sin acentos y/o caracteres especiales.</p>
                 </div>
             </div>
             
@@ -36,6 +44,7 @@
                     value="Desencriptar" 
                     onclick="desencriptar()"
                 />
+                <button class="btn-copiar" type="button" onclick="copyToClipboard()">Copiar</button>
             </div>
             <div class="encriptado">
                 <img src="Imagenes/muñeco.png" alt="" id="muñeco">
@@ -48,7 +57,17 @@
         </div>
     </body>
 
-    <footer>
+    <footer class="pieDePagina">
+        <ul class="redes">
+            <li>
+                <a href="https://www.linkedin.com/in/cesar-abraham-melendez-arias">
+                    <img src="Imagenes/linkdIn.png" alt="Logotipo que dirige a la pagina de LinkedIn"/>
+                
+                <a href="https://github.com/CesarMelendez26">
+                    <img src="Imagenes/Github.png" alt="Logotipo que dirige a la pagina de Github"/>   
+            </li>
+        </ul>
     </footer>
+
     <script src="index.js"></script>
 </html>
